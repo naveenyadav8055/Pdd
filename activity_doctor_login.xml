@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:padding="20dp"
+
+    android:background="@android:color/white">
+
+
+    <!-- Back Button -->
+    <ImageView
+        android:id="@+id/btnBack"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="20dp"
+        android:contentDescription="Back"
+        android:padding="10dp"
+        android:src="@drawable/vector" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        android:padding="15dp"
+        android:orientation="vertical">
+
+
+        <!-- Title -->
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DOCTOR LOGIN"
+            android:textStyle="bold"
+            android:textSize="22sp"
+            android:textColor="@android:color/black"
+            android:layout_marginBottom="20dp"/>
+
+        <!-- Illustration -->
+
+        <!-- Email Input -->
+        <ImageView
+
+            android:layout_width="250dp"
+            android:layout_height="180dp"
+            android:layout_marginBottom="20dp"
+            android:contentDescription="Illustration"
+            android:src="@drawable/parentlogo" />
+
+            <!-- Password Input -->
+        <EditText
+            android:id="@+id/edtnumber"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/rectangle"
+            android:hint="Enter Number"
+            android:textColor="@android:color/black"
+            android:textColorHint="@android:color/darker_gray"
+            android:padding="10dp"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Enter your password"
+            android:background="@drawable/rectangle"
+            android:textColor="@android:color/black"
+            android:textColorHint="@android:color/darker_gray"
+            android:padding="10dp"
+            android:textSize="16sp"
+            android:inputType="textPassword"
+            android:layout_marginBottom="20dp"/>
+
+
+        <!-- Sign-in Button -->
+        <Button
+            android:id="@+id/login"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Sign in"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:backgroundTint="@color/blue"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:id="@+id/tv_already_have_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="You Don't have an account?"
+            android:textSize="14sp"
+            android:layout_marginStart="-35dp"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:id="@+id/tv_login_link"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Register Now"
+            android:layout_marginStart="100dp"
+            android:padding="0dp"
+            android:textColor="@android:color/black"
+            android:textSize="14sp"
+            android:layout_marginTop="-20dp"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+</LinearLayout>
+
+

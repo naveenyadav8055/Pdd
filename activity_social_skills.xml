@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="12dp"
+    android:paddingStart="20dp"
+    android:paddingEnd="20dp"
+    android:background="@color/white">
+
+    <!-- Back and Notification Icons -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:layout_margin="10dp"
+        android:layout_marginTop="8dp">
+
+        <ImageView
+            android:id="@+id/back_icon"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/vector"
+            android:layout_alignParentStart="true" />
+
+        <ImageView
+            android:id="@+id/notification_icon"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/notification"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+
+    <!-- Dropdown Buttons -->
+    <Button
+        android:id="@+id/btn_introduction"
+        android:layout_width="320dp"
+        android:layout_height="68dp"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:text="Introduction"
+        android:layout_gravity="center"
+        android:backgroundTint="@color/light_blue"
+        android:drawableEnd="@drawable/down" />
+
+    <Button
+        android:id="@+id/btn_eye_contanct_skills"
+        android:layout_width="320dp"
+        android:layout_height="68dp"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@color/light_blue"
+        android:drawableEnd="@drawable/down"
+        android:text="Eye Contact skill"
+        android:textColor="@color/black"
+        android:textSize="20dp" />
+
+    <Button
+        android:layout_margin="10dp"
+        android:id="@+id/btn_pointing_skills"
+        android:layout_width="320dp"
+        android:layout_height="68dp"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/light_blue"
+        android:layout_gravity="center"
+        android:textSize="20dp"
+        android:text="Pointing Skill"
+        android:drawableEnd="@drawable/down"
+        android:layout_marginTop="8dp" />
+
+    <Button
+        android:layout_margin="10dp"
+        android:id="@+id/btn_imitation_skill"
+        android:layout_width="320dp"
+        android:layout_height="68dp"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:backgroundTint="@color/light_blue"
+        android:text="Imitation Skill"
+        android:layout_gravity="center"
+        android:drawableEnd="@drawable/down"
+        android:layout_marginTop="8dp" />
+    <Button
+        android:layout_margin="10dp"
+        android:id="@+id/btn_joint_attention_skills"
+        android:layout_width="320dp"
+        android:layout_height="68dp"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/light_blue"
+        android:textSize="20dp"
+        android:text="Joint attention Skill"
+        android:layout_gravity="center"
+        android:drawableEnd="@drawable/down"
+        android:layout_marginTop="8dp" />
+
+    <!-- Illustration -->
+    <ImageView
+        android:layout_margin="10dp"
+        android:id="@+id/image_illustration"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/training"
+        android:scaleType="fitCenter"
+        android:layout_marginTop="16dp"/>
+
+</LinearLayout>

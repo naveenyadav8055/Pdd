@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:paddingStart="20dp"
+    android:paddingEnd="20dp"
+    android:background="@color/white">
+
+    <!-- Back and Notification Icons -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+        <ImageView
+            android:id="@+id/back_icon"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/vector"
+            android:layout_alignParentStart="true" />
+
+        <ImageView
+            android:id="@+id/notification_icon"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/notification"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TRAINING"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:gravity="center"/>
+
+    <!-- Dropdown Buttons -->
+    <Button
+        android:layout_margin="10dp"
+        android:id="@+id/btn_social_skills"
+        android:layout_width="310dp"
+        android:layout_height="68dp"
+        android:textColor="@color/black"
+        android:text="Social Skills"
+        android:backgroundTint="@color/purple"
+        android:drawableEnd="@drawable/down" />
+
+    <Button
+        android:layout_margin="10dp"
+        android:id="@+id/btn_play_skills"
+        android:layout_width="310dp"
+        android:layout_height="68dp"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/purple"
+        android:text="Play Skills"
+        android:drawableEnd="@drawable/down"
+        android:layout_marginTop="8dp" />
+
+    <Button
+        android:layout_margin="10dp"
+        android:id="@+id/btn_self_help_skills"
+        android:layout_width="310dp"
+        android:layout_height="68dp"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/purple"
+        android:text="Self Help Skills"
+        android:drawableEnd="@drawable/down"
+        android:layout_marginTop="8dp" />
+
+    <Button
+        android:layout_margin="10dp"
+        android:id="@+id/btn_behavioral_issues"
+        android:layout_width="310dp"
+        android:layout_height="68dp"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/light_blue"
+        android:text="Handling Behavioral issues"
+        android:drawableEnd="@drawable/down"
+        android:layout_marginTop="8dp" />
+
+    <!-- Illustration -->
+    <ImageView
+        android:layout_margin="10dp"
+        android:id="@+id/image_illustration"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/com_socia"
+        android:scaleType="fitCenter"
+        android:layout_marginTop="16dp"/>
+
+</LinearLayout>

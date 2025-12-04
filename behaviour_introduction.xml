@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <!-- Back Button -->
+    <ImageButton
+        android:id="@+id/back_button"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignParentStart="true"
+        android:layout_margin="20dp"
+        android:layout_marginStart="23dp"
+        android:layout_marginEnd="16dp"
+        android:background="@null"
+        android:src="@drawable/vector"
+        android:contentDescription="Go Back" />
+
+    <!-- Notification Button -->
+    <ImageButton
+        android:id="@+id/notification_button"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@drawable/notification"
+        android:background="@null"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="20dp"
+        android:contentDescription="Notifications" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:gravity="center"
+            android:text="HANDLING BEHAVIORAL ISSUES"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <!-- FrameLayout to Overlay Play Button on Image -->
+        <FrameLayout
+            android:layout_width="310dp"
+            android:layout_height="200dp">
+
+            <!-- Video Thumbnail -->
+            <ImageView
+                android:id="@+id/video_thumbnail"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitCenter"
+                android:src="@drawable/handiling_intro"
+                android:contentDescription="Video Thumbnail - Social Skills Training" />
+
+            <!-- Play Button Centered on Thumbnail -->
+            <ImageButton
+                android:id="@+id/play_button"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_gravity="center"
+                android:background="@null"
+                android:src="@drawable/play"
+                android:contentDescription="Play Video" />
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="16dp"
+            android:text="Communication skills might pose challenges for your child, even though they appear effortless for you or others. To assist you in nurturing your child's communication abilities at home, we've prepared a video with practical tips aimed at enhancing their capacity to navigate social interactions more effectively."
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/btn_next"
+            android:layout_width="220dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="16dp"
+            android:background="@color/blue"
+            android:text="NEXT"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+    </LinearLayout>
+</RelativeLayout>
